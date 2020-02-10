@@ -4,7 +4,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 sched = BlockingScheduler()
 
 
-@sched.scheduled_job('interval', minutes=2)
+@sched.scheduled_job('interval', hours=2)
 def main():
     print('[!] Starting crawling.')
     os.system('python -m scrapy crawl imdnews')
