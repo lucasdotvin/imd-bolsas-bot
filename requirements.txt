@@ -22,7 +22,6 @@ pycparser==2.19
 PyDispatcher==2.0.5
 PyHamcrest==2.0.0
 pyOpenSSL==19.1.0
-python-dotenv==0.11.0
 python-telegram-bot==12.4.1
 pytz==2019.3
 queuelib==1.5.0

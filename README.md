@@ -45,7 +45,6 @@ O deploy desse projeto deve ser realizado conforme as instruções presentes [ne
 
 ## Construído Com
 
-* [python-dotenv](https://pypi.org/project/python-dotenv/) - A forma mais simples de ler arquivos .env com Python.
 * [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot/) - Um wrapper irrecusável para a construção de bots para o Telegram.
 * [Scrapy](https://scrapy.org/) - Um framework rápido e poderoso de web crawling.
 
