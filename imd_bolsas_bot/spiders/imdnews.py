@@ -14,7 +14,7 @@ class IMDNews(scrapy.Spider):
 
 
     def get_news_summary(self, news_box):
-        SUMMARY_SELECTOR = 'h4.card-title ::text'
+        SUMMARY_SELECTOR = 'p.card-text ::text'
         return news_box.css(SUMMARY_SELECTOR).extract_first()
 
 
