@@ -5,6 +5,8 @@ BOT_NAME = 'imd_bolsas_bot'
 SPIDER_MODULES = ['imd_bolsas_bot.spiders']
 NEWSPIDER_MODULE = 'imd_bolsas_bot.spiders'
 
+USER_AGENT = 'imd_bolsas_bot (+https://t.me/imdbolsasbot)'
+
 ITEM_PIPELINES = {
     'imd_bolsas_bot.exporters.PerIDJSONExportPipeline': 1000
 }
