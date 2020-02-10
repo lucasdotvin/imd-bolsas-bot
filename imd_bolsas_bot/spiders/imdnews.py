@@ -62,6 +62,11 @@ class IMDNews(scrapy.Spider):
         return id_
 
 
+    def get_news_link(self, id_, response):
+        url = response.urljoin(f'noticias/{id_}')
+        return url
+
+
     def parse(self, response):
         NEWS_BOX_SELECTOR = '.col-xs-12.col-sm-3 .card-block.p-2'
         NEXT_PAGE_URL_XPATH = '''
