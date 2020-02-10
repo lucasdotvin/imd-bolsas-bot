@@ -3,7 +3,7 @@ import re
 import scrapy
 
 
-class News(scrapy.Spider):
+class IMDNews(scrapy.Spider):
     name = 'imdnews'
     start_urls = ['https://www.imd.ufrn.br/portal/noticias']
 
