@@ -91,3 +91,6 @@ ENV/
 
 # Scraping results
 results/
+
+# Already published news
+published-news.json
