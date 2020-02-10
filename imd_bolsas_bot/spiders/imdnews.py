@@ -74,8 +74,12 @@ class IMDNews(scrapy.Spider):
         '''
 
         for news_box in response.css(NEWS_BOX_SELECTOR):
+            id_ = self.get_news_id(news_box)
+            url = self.get_news_link(id_, response)
+
             yield {
-                'id': self.get_news_id(news_box),
+                'id': id_,
+                'url': url,
                 'title': self.get_news_title(news_box),
                 'summary': self.get_news_summary(news_box),
                 'author': self.get_news_author(news_box),
