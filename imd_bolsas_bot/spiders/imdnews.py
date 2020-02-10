@@ -25,7 +25,9 @@ class IMDNews(scrapy.Spider):
 
     def get_news_date(self, news_box):
         DATE_SELECTOR = 'div.card-date > h6 ::text'
-        return news_box.css(DATE_SELECTOR).extract_first()
+        date = news_box.css(DATE_SELECTOR).extract_first()
+        date = date.strip(' por ')
+        return date
 
 
     def get_news_tags(self, news_box):
