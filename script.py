@@ -1,5 +1,4 @@
 import os
-import configs
 
 from src.imdnewsbot import IMDNewsBot
 
