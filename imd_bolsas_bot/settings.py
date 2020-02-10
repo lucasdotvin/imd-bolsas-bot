@@ -8,7 +8,8 @@ NEWSPIDER_MODULE = 'imd_bolsas_bot.spiders'
 USER_AGENT = 'imd_bolsas_bot (+https://t.me/imdbolsasbot)'
 
 ITEM_PIPELINES = {
-    'imd_bolsas_bot.exporters.PerIDJSONExportPipeline': 1000
+    'imd_bolsas_bot.pipelines.WantedTagsFilterPipeline': 0,
+    'imd_bolsas_bot.exporters.PerIDJSONExportPipeline': 1
 }
 
 # Enable and configure HTTP caching (disabled by default)
