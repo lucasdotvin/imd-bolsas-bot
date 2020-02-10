@@ -59,4 +59,4 @@ Sinta-se absolutamente à vontade para contribuir.
 
 ## Licença
 
-Esse projeto é distribuído sob a Licença MIT. Leia o arquivo [LICENSE](LICENSE) para ter mais detalhes.
+Esse projeto é distribuído sob a Licença MIT. Leia o arquivo [LICENCE](LICENCE) para ter mais detalhes.
