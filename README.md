@@ -17,6 +17,10 @@ Você precisará basicamente do Python 3.7 ou superior instalado na sua máquina
 Recomendo fortemente que você utilize um ambiente virtual para rodar esse projeto, de modo a isolar os pacotes externos instalados e manter seu escopo global limpo.
 Caso não esteja familizarizado com esse conceito, recomendo esta excelente leitura rápida: "[Gerenciamento de Ambientes Python com pyenv](https://medium.com/operacionalti/gerenciamento-de-ambientes-python-com-pyenv-3ce71eb1a2c3)".
 
+### Variáveis de Ambiente
+
+O arquivo .env.example contém a relação das variáveis de ambiente que o bot precisa para funcionar. Defina-as antes de executar o projeto.
+
 ### Instalação
 
 Clone esse repositório via Git ou baixe-o em um arquivo .zip aqui mesmo no GitHub. Em seguia, instale as dependências:
