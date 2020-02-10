@@ -1,7 +1,7 @@
 import os
 import configs
 
-from lib.imdnewsbot import IMDNewsBot
+from src.imdnewsbot import IMDNewsBot
 
 
 def main():
