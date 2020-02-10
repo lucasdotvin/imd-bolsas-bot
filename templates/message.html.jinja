@@ -1,0 +1,10 @@
+<ins>#{{ id }}</ins> [<em>{{ tags|map('upper')|join(', ') }}</em>]
+
+<em>Publicado em: {{ date|upper() }}</em>
+<em>Autoria: {{ author }}</em>
+
+<strong>{{ title }}</strong>
+
+{{ summary }}.
+Confira a notícia na íntegra:
+{{ url }}
