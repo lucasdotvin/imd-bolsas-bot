@@ -32,12 +32,9 @@ class IMDNewsBot(object):
         self._start_bot()
 
         news_handler = NewsHandler()
-        news_handler.load_collected_news()
-        news_handler.load_published_news()
-
         unpublished_news = news_handler.get_unpublished_news()
-        for news_hash in unpublished_news:
-            news_data = news_handler.get_news_data(news_hash)
+        for news in unpublished_news:
+            news_data = news.__dict__
 
             message_template = TemplateHandler('message')
             message = message_template.render(news_data)
