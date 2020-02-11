@@ -52,6 +52,7 @@ O deploy desse projeto deve ser realizado conforme as instruções presentes [ne
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Uma moderna e simples biblioteca de templating para Python.
 * [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot/) - Um wrapper irrecusável para a construção de bots para o Telegram.
 * [Scrapy](https://scrapy.org/) - Um framework rápido e poderoso de web crawling.
+* [SQLAlchemy](https://www.sqlalchemy.org/) - Um kit de ferramentas SQL que fornece flexibilidade e poder a aplicações.
 
 ## Contribuições
 
