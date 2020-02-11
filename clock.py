@@ -15,3 +15,4 @@ def main():
     print('[!] Messages sended.')
 
 sched.start()
+main()
