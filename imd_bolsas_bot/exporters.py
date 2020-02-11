@@ -1,38 +1,26 @@
-from pathlib import Path
-from scrapy.exporters import JsonItemExporter
+import database as db
 
 
-class PerIDJSONExportPipeline(object):
+class DBExporterPipeline(object):
     def open_spider(self, spider):
-        Path(f'results/{spider.name}').mkdir(
-            parents=True,
-            exist_ok=True
-        )
-
-        self.exporters = {}
+        self._session = db.Session()
 
 
     def close_spider(self, spider):
-        for exporter in self.exporters.values():
-            exporter.finish_exporting()
-
-
-    def _do_exporting(self, item, spider_name):
-        id_ = item['id']
-        if id_ not in self.exporters:
-            file_path = f'results/{spider_name}/{id_}.json'
-            file_handler = open(file_path, 'wb')
-
-            exporter = JsonItemExporter(file_handler)
-            exporter.start_exporting()
-
-            self.exporters[id_] = exporter
-
-        return self.exporters[id_]
+        self._session.commit()
 
 
     def process_item(self, item, spider):
-        exporter = self._do_exporting(item, spider.name)
-        exporter.export_item(item)
+        news = db.News(
+            id=item['id'],
+            url=item['url'],
+            title=item['title'],
+            summary=item['summary'],
+            author=item['author'],
+            published_at=item['date'],
+            tags=', '.join(item['tags'])
+        )
+
+        self._session.add(news)
 
         return item
