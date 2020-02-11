@@ -88,9 +88,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-# Scraping results
-results/
-
-# Already published news
-published-news.json
