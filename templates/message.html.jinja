@@ -1,4 +1,4 @@
-<ins>#{{ id }}</ins> [<em>{{ tags|map('upper')|join(', ') }}</em>]
+<ins>#{{ id }}</ins> [<em>{{ tags|upper() }}</em>]
 
 <em>Publicado em: {{ date|upper() }}</em>
 <em>Autoria: {{ author }}</em>
