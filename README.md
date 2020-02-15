@@ -1,6 +1,13 @@
-# IMDBolsasBot
+<h1 align="center">IMDBolsasBot</h1>
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](blob/master/LICENSE)
+<p align="center">
+    <a href="https://www.python.org/">
+        <img alt="Made With Python Badge" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg">
+    </a>
+    <a href="blob/master/LICENSE">
+        <img alt="MIT License Badge" src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat">
+    </a>
+</p>
 
 Bot de alimentação do canal [IMD Bolsas](https://t.me/imdbolsas) no Telegram. Seu objetivo é alertar estudantes do instituto sobre bolsas e vagas de estágio.
 
@@ -20,10 +27,17 @@ Caso não esteja familizarizado com esse conceito, recomendo esta excelente leit
 ### Variáveis de Ambiente
 
 O arquivo .env.example contém a relação das variáveis de ambiente que o bot precisa para funcionar. Defina-as antes de executar o projeto.
+Caso prefira carregar essas variáveis localmente, copie o arquivo ```.env.example``` para um arquivo ```.env```:
+
+```bash
+cp .env.example .env
+```
+
+Em seguida, edite o novo arquivo, inserindo os valores das variáveis.
 
 ### Instalação
 
-Clone esse repositório via Git ou baixe-o em um arquivo .zip aqui mesmo no GitHub. Em seguia, instale as dependências:
+Clone esse repositório via Git ou baixe-o em um arquivo .zip aqui mesmo no GitHub. Em seguida, instale as dependências:
 
 ```bash
 pip -r requirements.txt
@@ -32,10 +46,10 @@ pip -r requirements.txt
 Para rodar somente a spider, execute o seguinte comando:
 
 ```bash
-python -m scrapy crawl news -o news.json
+python -m scrapy crawl imdnews -o news.json
 ```
 
-> O argumento "-o" define um arquivo para salvamento dos dados coletados.
+> O argumento "-o" define um arquivo para salvamento dos dados retornados pela spider.
 
 Para ativar o bot, simplesmente execute o arquivo ```script.py```:
 
@@ -45,7 +59,7 @@ python script.py
 
 ## Deployment
 
-O deploy desse projeto deve ser realizado conforme as instruções presentes [neste guia](https://github.com/michaelkrukov/heroku-python-script).
+Atualmente, esse projeto tem seu deploy realizado no Heroku. Para replicar isso, siga as instruções presentes [neste guia](https://github.com/michaelkrukov/heroku-python-script).
 
 ## Construído Com
 
@@ -60,4 +74,4 @@ Sinta-se absolutamente à vontade para contribuir.
 
 ## Licença
 
-Esse projeto é distribuído sob a Licença MIT. Leia o arquivo [LICENCE](LICENCE) para ter mais detalhes.
+Esse projeto é distribuído sob a Licença MIT. Leia o arquivo [LICENSE](LICENSE) para ter mais detalhes.
