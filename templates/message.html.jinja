@@ -1,10 +1,16 @@
-<ins>#{{ id }}</ins> [<em>{{ tags|upper() }}</em>]
+<pre>ID</pre>
+{{ id }}
 
-<em>Publicado em: {{ published_at }}</em>
-<em>Autoria: {{ author }}</em>
+<pre>Tags</pre>
+{{ tags|upper() }}
+
+<pre>Data de Publicação</pre>
+{{ published_at }}
+
+<pre>Autoria</pre>
+{{ author }}
 
 <strong>{{ title }}</strong>
+{{ summary }}
 
-{{ summary }}.
-Confira a notícia na íntegra:
 {{ url }}
