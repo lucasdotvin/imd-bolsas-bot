@@ -51,10 +51,10 @@ python -m scrapy crawl imdnews -o news.json
 
 > O argumento "-o" define um arquivo para salvamento dos dados retornados pela spider.
 
-Para ativar o bot, simplesmente execute o arquivo ```script.py```:
+Para ativar o bot, simplesmente execute o arquivo ```bot.py```:
 
 ```bash
-python script.py
+python bot.py
 ```
 
 ## Deployment
