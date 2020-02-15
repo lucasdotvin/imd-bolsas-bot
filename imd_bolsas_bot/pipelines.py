@@ -12,11 +12,11 @@ class DuplicateItemPipeline(object):
 
 
     def process_item(self, item, spider):
-        item = self._session.query(db.News).filter_by(
+        already_registered = self._session.query(db.News).filter_by(
             id=item['id']
         ).first()
 
-        if item:
+        if already_registered:
             item_id = item['id']
             raise DropItem(
                 f'Already registered. ID: {item_id}'
