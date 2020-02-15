@@ -36,9 +36,6 @@ class BotHandler(object):
         for news in unpublished_news:
             news_data = news.__dict__
 
-            print(news_data['published_at'])
-            print(type(news_data['published_at']))
-
             message_template = TemplateHandler('message')
             message = message_template.render(news_data)
             self._send_to_channel(message)
