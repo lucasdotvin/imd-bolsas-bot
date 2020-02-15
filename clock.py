@@ -11,7 +11,7 @@ def main():
     print('[!] Ending crawling.')
 
     print('[!] Sending messages.')
-    os.system('python script.py')
+    os.system('python app.py')
     print('[!] Messages sended.')
 
 sched.start()
