@@ -3,6 +3,27 @@ from datetime import datetime
 
 from scrapy.exceptions import DropItem
 
+import database as db
+
+
+class DuplicateItemPipeline(object):
+    def open_spider(self, spider):
+        self._session = db.Session()
+
+
+    def process_item(self, item, spider):
+        item = self._session.query(db.News).filter_by(
+            id=item['id']
+        ).first()
+
+        if item:
+            item_id = item['id']
+            raise DropItem(
+                f'Already registered. ID: {item_id}'
+            )
+
+        return item
+
 
 class SanitizeDatePipeline(object):
     MONTH_NAME_TRANSLATION_TABLE = {
