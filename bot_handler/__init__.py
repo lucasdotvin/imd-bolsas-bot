@@ -1,12 +1,12 @@
-from src.newshandler import NewsHandler
-from src.templatehandler import TemplateHandler
+from news_handler import NewsHandler
+from templates_handler import TemplateHandler
 
 from telegram.ext import Updater
 
 
-class IMDNewsBot(object):
+class BotHandler(object):
     def __init__(self, channel_id, telegram_token):
-        super(IMDNewsBot, self).__init__()
+        super(BotHandler, self).__init__()
         self.channel_id = channel_id
         self.telegram_token = telegram_token
 
@@ -35,6 +35,9 @@ class IMDNewsBot(object):
         unpublished_news = news_handler.get_unpublished_news()
         for news in unpublished_news:
             news_data = news.__dict__
+
+            print(news_data['published_at'])
+            print(type(news_data['published_at']))
 
             message_template = TemplateHandler('message')
             message = message_template.render(news_data)
