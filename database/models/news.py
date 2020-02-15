@@ -1,13 +1,5 @@
-import os
-
 from sqlalchemy import *
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.ext.hybrid import hybrid_property
-from sqlalchemy.orm import sessionmaker
-
-engine = create_engine(os.getenv('DATABASE_URL'), echo=True)
-Session = sessionmaker(bind=engine)
-Base = declarative_base()
+from database.base import Base
 
 
 class News(Base):
@@ -21,5 +13,3 @@ class News(Base):
     published_at = Column(Date, nullable=True)
     tags = Column(String, nullable=False)
     processed_at = Column(DateTime, nullable=True)
-
-Base.metadata.create_all(engine)
