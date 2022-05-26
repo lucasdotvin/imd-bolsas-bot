@@ -31,7 +31,7 @@ service-identity==18.1.0
 six==1.14.0
 SQLAlchemy==1.3.13
 tornado==6.0.3
-Twisted==19.10.0
+Twisted==22.4.0
 tzlocal==2.0.0
 w3lib==1.21.0
 zope.interface==4.7.1
