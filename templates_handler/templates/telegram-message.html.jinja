@@ -1,0 +1,13 @@
+<pre>ID</pre>
+{{ id }}
+
+<pre>Tags</pre>
+{{ tags|join(', ')|upper() }}
+
+<pre>Data de Publicação</pre>
+{{ publish_date.strftime('%d/%m/%Y') }}
+
+<strong>{{ title }}</strong>
+{{ description }}
+
+{{ url }}
