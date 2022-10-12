@@ -1,4 +1,4 @@
-<h1 align="center">IMDBolsasBot</h1>
+<h1 align="center">IMD Bolsas Bot</h1>
 
 <p align="center">
     <a href="https://www.python.org/">
@@ -9,7 +9,7 @@
     </a>
 </p>
 
-Bot de alimentação do canal [IMD Bolsas](https://t.me/imdbolsas) no Telegram. Seu objetivo é alertar estudantes do instituto sobre bolsas e vagas de estágio.
+Bot de alimentação do canal [IMD Bolsas](https://t.me/imdbolsas) no Telegram e do perfil [IMD Bolsas](https://twitter.com/imdbolsas) no Twitter. Seu objetivo é alertar estudantes do instituto sobre bolsas e vagas de estágio.
 
 ## Iniciando
 
@@ -17,7 +17,7 @@ Essas instruções lhe darão uma cópia do projeto e um caminho para executá-l
 
 ### Pré-Requisitos
 
-Você precisará basicamente do Python 3.7 ou superior instalado na sua máquina.
+Você precisará basicamente do Python 3.8 ou superior instalado na sua máquina.
 
 ### Ambiente Virtual
 
@@ -43,29 +43,16 @@ Clone esse repositório via Git ou baixe-o em um arquivo .zip aqui mesmo no GitH
 pip -r requirements.txt
 ```
 
-Para rodar somente a spider, execute o seguinte comando:
+Para rodar, execute o arquivo `main.py`:
 
 ```bash
-python -m scrapy crawl imdnews -o news.json
+python main.py
 ```
-
-> O argumento "-o" define um arquivo para salvamento dos dados retornados pela spider.
-
-Para ativar o bot, simplesmente execute o arquivo ```bot.py```:
-
-```bash
-python bot.py
-```
-
-## Deployment
-
-Atualmente, esse projeto tem seu deploy realizado no Heroku. Para replicar isso, siga as instruções presentes [neste guia](https://github.com/michaelkrukov/heroku-python-script).
 
 ## Construído Com
 
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Uma moderna e simples biblioteca de templating para Python.
 * [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot/) - Um wrapper irrecusável para a construção de bots para o Telegram.
-* [Scrapy](https://scrapy.org/) - Um framework rápido e poderoso de web crawling.
 * [SQLAlchemy](https://www.sqlalchemy.org/) - Um kit de ferramentas SQL que fornece flexibilidade e poder a aplicações.
 
 ## Contribuições
