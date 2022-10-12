@@ -4,11 +4,11 @@ from crawling import imd
 from database.models import News, NewsShare
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi_sqlalchemy import db
-from integrations import jerimum
+from integrations import jerimum, lais
 from sharing import telegram, twitter
 from server import auth
 
-RETRIEVING_MODULES = {'imd': imd, 'jerimum': jerimum}
+RETRIEVING_MODULES = {'imd': imd, 'jerimum': jerimum, 'lais': lais}
 SHARING_MODULES = {'telegram': telegram, 'twitter': twitter}
 
 router = APIRouter()
