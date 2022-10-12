@@ -1,7 +1,12 @@
 <h1 align="center">IMD Bolsas Bot</h1>
 
 <p align="center">
-<a href="https://www.python.org/"><img alt="Made With Python Badge" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a> <a href="blob/master/LICENSE"><img alt="MIT License Badge" src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat"></a> <a href="https://github.styleci.io/repos/239562591?branch=develop"><img src="https://github.styleci.io/repos/239562591/shield?branch=develop" alt="StyleCI"></a>
+<a href="https://www.python.org/"><img alt="Made With Python Badge" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a>
+<a href="blob/master/LICENSE"><img alt="MIT License Badge" src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat"></a>
+<a href="https://github.styleci.io/repos/239562591?branch=develop"><img src="https://github.styleci.io/repos/239562591/shield?branch=develop" alt="StyleCI"></a>
+<br>
+<a href="https://supabase.com/"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase"></a>
+<a href="https://vercel.com/"><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"></a>
 </p>
 
 Bot de alimentação do canal [IMD Bolsas](https://t.me/imdbolsas) no Telegram e do perfil [IMD Bolsas](https://twitter.com/imdbolsas) no Twitter. Seu objetivo é alertar estudantes do instituto sobre bolsas e vagas de estágio.
